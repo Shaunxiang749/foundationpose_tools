@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Visualize FoundationPose Result",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/visualize_results.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/..",
+            "args": [
+                "--data",
+                "custom_cup/synthetic_cup",
+                "--result",
+                "debug_cup30",
+                "--topk",
+                "5"
+            ]
+        },
+        {
+            "name": "Analyze FoundationPose Experiment",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/analyze_experiment.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/..",
+            "args": [
+                "--mesh",
+                "custom_cup/cup_colored.ply",
+                "--data",
+                "custom_cup/synthetic_cup",
+                "--result",
+                "debug_cup30",
+                "--topk",
+                "5"
+            ]
+        }
+    ]
+}
