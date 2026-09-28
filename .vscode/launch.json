@@ -10,11 +10,11 @@
             "cwd": "${workspaceFolder}/..",
             "args": [
                 "--data",
-                "custom_cup/synthetic_cup",
+                "custom_cup/synthetic_cup",//实验的数据集文件夹路径
                 "--result",
-                "debug_cup30",
+                "debug_cup30",//实验的结果路径
                 "--topk",
-                "5"
+                "5"//可视化的topk数量（按误差最大帧数，从大到小排序后取可视内容）   
             ]
         },
         {
@@ -26,11 +26,11 @@
             "cwd": "${workspaceFolder}/..",
             "args": [
                 "--mesh",
-                "custom_cup/cup_colored.ply",
+                "custom_cup/cup_colored.ply",//实验的mesh（实验对象的3D模型）路径
                 "--data",
-                "custom_cup/synthetic_cup",
+                "custom_cup/synthetic_cup",//同上
                 "--result",
-                "debug_cup30",
+                "debug_cup30",//同上
                 "--topk",
                 "5"
             ]
