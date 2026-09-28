@@ -774,4 +774,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-git@github.com:Shaunxiang749/foundationpose_tools.git
